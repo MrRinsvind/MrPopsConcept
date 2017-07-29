@@ -1,0 +1,77 @@
+
+
+header{
+  background-color: $white;
+  .container{
+    ul{
+      list-style: none;
+      padding: 34px 0px;
+      margin:0px;
+      display: flex;
+      justify-content: center;
+      li{
+        position: relative;
+        &:not(:nth-child(3)){
+          display: flex;
+          align-items: center;
+        }
+        margin-right:80px;
+        &:last-of-type,&:nth-of-type(2){
+           margin-right: 0px;
+        }
+        &:nth-of-type(3){
+          margin:0px 38px;
+        }
+        &.active{
+          a:after{
+            visibility: visible;
+          }
+        }
+        &:nth-child(3){
+          .logo{
+            margin:0px auto;
+            width:137px;
+            height:137px;
+            svg{
+              max-width: 137px;
+              height:137px;
+            }
+          }
+
+          h3{
+            @include font($sans-Font,23px,400,$dark-gray);
+            margin:15px 0px 0px;
+            text-align: center;
+          }
+        }
+        a{
+          position: relative;
+          @include font($sans-Font,22px,400,$dark-gray);
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover:after{
+            visibility: visible;
+          }
+          &:after{
+            visibility: hidden;
+            bottom:-13px;
+            left:33%;
+            content: '';
+            position: absolute;
+            height:8px;
+            width:30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/active_link.svg);
+          }
+          &.short{
+            &:after{
+              left:28%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

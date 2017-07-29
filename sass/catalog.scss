@@ -1,0 +1,65 @@
+.catalog-list{
+  .catalog-item{
+
+    &.lemon{background-color:#FCF38C;}
+    &.coconut{background-color:#EFEFEF;}
+    &.strawberry{background-color:#FCA18C;}
+    &.iris{background-color:#FCBF8C;}
+    &.lime{background-color:#E1FCAE;}
+    &.blueberry{background-color:#D3CCFD;}
+    .container{
+      display: flex;
+      padding: 70px;
+      justify-content: space-between;
+      .logo{
+        border-radius: 50%;
+        border:10px solid white;
+        max-height: 300px;
+        max-height: 300px;
+        width:300px!important;
+        height:300px!important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 15px 0px rgba(51,51,51,.25);
+
+      }
+      .content{
+        max-width: 550px;
+        padding-left: 80px;
+        h4{
+          @include font($sans-Font,28px,500,$dark-gray);
+          margin:20px 0px;
+          letter-spacing: 2px;
+        }
+        p{
+          margin:0px 0px 44px;
+          @include font($serif-Font,18px,400,$dark-gray);
+          line-height: 29px;
+        }
+        ul{
+          @include font($sans-Font,23px,400,$dark-gray);
+          list-style: none;
+          padding: 0px;
+          margin:0px;
+          display: flex;
+          li{
+            margin-right: 30px;
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            border:5px solid white;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px 0px 15px 0px rgba(51,51,51,.25);
+            cursor: pointer;
+            &:hover{
+              box-shadow: 0px 0px 15px 0px rgba(51,51,51,.55);
+            }
+          }
+        }
+      }
+    }
+  }
+}
