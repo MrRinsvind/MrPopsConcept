@@ -1,14 +1,22 @@
 //Colors
-//$Matherial-Blue:#2D333E;
-//$Body-Background: #EDEDED;
-//$White:#FFFFFF;
-//$Gray: #B9B9B9;
-//$Blue: #4B99CC;
+$White:#fff;
+$Dark-Gray: #313131;
+$Light-Gray: #EFEFEF;
+
+//Catalog
+$Lemon: #FCF38C;
+$Coconut: #EFEFEF;
+$Strawberry: #FCA18C;
+$Iris: #FCBF8C;
+$Lime: #E1FCAE;
+$Blueberry: #D3CCFD;
 
 //Font-Family
-$Main-Font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$Sans-Font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-@mixin font($family-type, $size: 1rem, $weight : normal, $color : $Matherial-Blue){
+$Serif-Font: Georgia, serif;
+
+@mixin font($family-type, $size: 1rem, $weight : normal, $color : $Dark-Gray){
   font: {
     family: $family-type;
     size: $size;
