@@ -1,0 +1,85 @@
+footer{
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: flex;
+  padding: 74px 0px;
+  background: rgba(66,66,66,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(66,66,66,1)), color-stop(78%, rgba(29,29,29,1)), color-stop(100%, rgba(29,29,29,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#1d1d1d', GradientType=1 );
+  .content-block{
+    margin:0px auto;
+    .logo{
+      width: 164px;
+      height:164px;
+      margin: 0px auto;
+      svg{
+        max-width: 164px;
+        max-height:164px;
+      }
+    }
+    p:first-of-type{
+      margin: 20px 0px 10px;
+      @include font($sans-Font,18px,400,$white);
+    }
+    p:last-of-type{
+      margin: 10px 0px 20px;
+      @include font($sans-Font,18px,400,$white);
+    }
+    ul{
+      list-style: none;
+      margin:0px;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      li{
+        position: relative;
+        height:25px;
+        width:25px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &.inst{
+          background-image: url(../img/instagram_w.svg);
+        }
+        &.faceb{
+          background-image: url(../img/facebook_w.svg);
+        }
+        &:first-of-type{
+          margin-right: 20px;
+        }
+        a{
+          position: absolute;
+          height:100%;
+          width:100%;
+          top:0px;
+          left:0px;
+        }
+      }
+    }
+  }
+  .block-ice-cream{
+    position: absolute;
+    top:50px;
+    width: 50%;
+    height:100%;
+    &.left{
+      left:0px;
+      background-image: url(../img/groupLogoLeft.svg);
+      background-position: 10% 0%;
+    }
+    &.right{
+      right:40px;
+      background-position: 90% 0%;
+      background-image: url(../img/groupLogoRight.svg);
+    }
+
+    background-repeat: no-repeat;
+
+  }
+}

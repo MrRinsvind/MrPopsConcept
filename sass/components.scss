@@ -1,0 +1,53 @@
+.white{
+  background-color: white;
+}
+.container{
+  margin:0px auto 0px;
+  max-width: 1024px;
+}
+div,input,button,textarea,a{
+  outline: none!important;
+}
+.page-title{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width:100%;
+  text-align: center;
+  position: relative;
+  background: rgba(66,66,66,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(66,66,66,1)), color-stop(78%, rgba(29,29,29,1)), color-stop(100%, rgba(29,29,29,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(66,66,66,1) 0%, rgba(29,29,29,1) 78%, rgba(29,29,29,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#1d1d1d', GradientType=1 );
+  h2{
+    padding: 70px 0px;
+    @include font($sans-Font,48px,500,$white);
+    text-transform: uppercase;
+    margin: 0px auto;
+    min-width: 600px;
+
+  }
+  .block-ice-cream{
+    position: absolute;
+    top:0px;
+    width: 50%;
+    height:100%;
+    &.left{
+      left:0px;
+      background-image: url(../img/groupLogoLeft.svg);
+      background-position: 10% 0%;
+    }
+    &.right{
+      right:40px;
+      background-position: 90% 0%;
+      background-image: url(../img/groupLogoRight.svg);
+    }
+
+    background-repeat: no-repeat;
+
+  }
+}

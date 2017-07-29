@@ -1,19 +1,19 @@
 //Colors
-$White:#fff;
-$Dark-Gray: #313131;
-$Light-Gray: #EFEFEF;
+$white:#fff;
+$dark-gray: #313131;
+$light-gray: #EFEFEF;
 
 //Catalog
-$Lemon: #FCF38C;
-$Coconut: #EFEFEF;
-$Strawberry: #FCA18C;
-$Iris: #FCBF8C;
-$Lime: #E1FCAE;
-$Blueberry: #D3CCFD;
-
+$lemon: #FCF38C;
+$coconut: #EFEFEF;
+$strawberry: #FCA18C;
+$iris: #FCBF8C;
+$lime: #E1FCAE;
+$blueberry: #D3CCFD;
 //Font-Family
-$Sans-Font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$Serif-Font: Georgia, serif;
+$sans-Font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$serif-Font: Georgia, serif;
 
 @mixin font($family-type, $size: 1rem, $weight : normal, $color : $Dark-Gray){
   font: {
