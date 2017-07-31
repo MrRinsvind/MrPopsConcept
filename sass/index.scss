@@ -1,0 +1,169 @@
+.index-news{
+  padding: 50px 0px 0px;
+  background-color: #F9F9F9;
+  h3{
+    max-width: 420px;
+    margin:0px auto 90px;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include font($sans-Font,32px,500,$dark-gray);
+    position: relative;
+    &:after{
+      content: '';
+      right: -50px;
+      position: absolute;
+      top:47%;
+      width:90px;
+      height:2px;
+      background-color: #DDDDDD;
+    }
+    &:before{
+      content: '';
+      left: -50px;
+      position: absolute;
+      top:47%;
+      width:90px;
+      height:2px;
+      background-color: #DDDDDD;
+    }
+  }
+  .news-list{
+    max-width: 1024px;
+    margin:0px auto 0px;
+    padding-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    .news-item{
+      &:hover{
+        box-shadow: 0 0 15px 0 rgba(51,51,51,.25);
+      }
+      max-width:470px;
+      .logo{
+        width:100%;
+        height:275px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      h4{
+        padding: 0px 10px 0px;
+        line-height: 23px;
+        @include font($sans-Font,18px,400,$dark-gray);
+        text-transform: uppercase;
+        margin: 26px 0px 16px;
+      }
+      p{
+        padding: 0px 1px 10px 10px;
+        line-height: 28px;
+        margin:0px;
+        @include font($serif-Font,18px,400,$dark-gray);
+      }
+    }
+  }
+}
+.ice-cream-list{
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: white;
+  h3{
+
+    max-width: 420px;
+    margin:0px auto 70px;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include font($sans-Font,32px,500,$dark-gray);
+    position: relative;
+    &:after{
+      content: '';
+      right: -50px;
+      position: absolute;
+      top:47%;
+      width:90px;
+      height:2px;
+      background-color: #DDDDDD;
+    }
+    &:before{
+      content: '';
+      left: -50px;
+      position: absolute;
+      top:47%;
+      width:90px;
+      height:2px;
+      background-color: #DDDDDD;
+    }
+  }
+  .cream-list{
+    max-width: 1100px;
+    display: flex;
+    margin:0px auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .cream-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin:0px 0px 50px 0px;
+      &:not(:nth-child(5n)){
+        margin-right: 100px;
+      }
+      h6{
+        margin:20px auto 0px;
+        @include font($sans-Font,20px,400,$dark-gray);
+      }
+      .logo{
+        height:135px;
+        width:135px;
+        border:2px solid white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0 0 5px 0 rgba(51,51,51,.25);
+      }
+    }
+  }
+}
+.index-logo{
+  position: relative;
+  width:100%;
+  height:550px;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  .dark{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.33);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.33) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.33)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.33) 0%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.33) 0%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.33) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.33) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+  }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .content{
+    z-index: 50пше ;
+  text-align: center;
+    h4{
+      margin:0px 0px 10px;
+      @include font($sans-Font,43px,300,$white);
+    }
+    h3{
+      @include font($sans-Font,72px,700,$white);
+      margin:0px 0px 30px;
+    }
+  }
+}
